@@ -24,3 +24,10 @@ echo $car->start() ;
 
 echo '<br>' . $bike->getColor($color) . '<br>';
 echo '<br>' . $bike->getNbWheels() . '<br>';
+echo '<br>' . $bike->getNbSeats() . '<br>';
+
+echo $bike->forward();
+echo '<br> Vitesse du vélo : ' . $bike->getCurrentSpeed(15) . ' km/h' . '<br>';
+echo $bike->brake();
+echo '<br> Vitesse du vélo : ' . $bike->getCurrentSpeed(15). ' km/h' . '<br>';
+echo $bike->brake();
