@@ -20,6 +20,23 @@ public function __construct(string $color, int $nbWheels)
 
 }
 
+public function forward(): string
+{
+    $this->currentSpeed = 15;
+
+    return "Go !";
+}
+
+public function brake(): string
+{
+    $sentence = "";
+    while($this->currentSpeed > 0) {
+        $this->currentSpeed--;
+        $sentence .= "BRAKE !!";
+    }
+    $sentence .= "I'm Stopped !";
+    return $sentence;
+}
 
     /**
      * Get the value of color
@@ -68,5 +85,13 @@ public function __construct(string $color, int $nbWheels)
     public function getNbWheels()
     {
         return " the number of wheels is : " . $this->nbWheels;
+    }
+
+    /**
+     * Get the value of nbSeats
+     */ 
+    public function getNbSeats()
+    {
+        return " the number of seat is : " . $this->nbSeats;
     }
 }
