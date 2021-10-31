@@ -1,9 +1,9 @@
 <?php
 
-require_once 'Car.php';
-require_once 'Bicycle.php';
+require_once 'car.php';
+require_once 'bicycle.php';
 
-$car = new Car($color = 'blue', $nbSeats = 5, $energy = 'electricity');
+$ar = new Car($color = 'blue', $nbSeats = 5, $energy = 'electricity');
 $bike = new Bicycle($color = 'White', $nbWheels = 2);
 
 echo '<br> The Car is color ' . $car->getColor() . '<br>';
